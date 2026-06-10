@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f7f0; 
+    color: #3D312A;
+}
+
+.container-fluid {
+    padding: 10px 20px 20px 20px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #EFE9E1;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(140, 122, 107, 0.12), 0 4px 10px rgba(140, 122, 107, 0.06);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #E6CCB2;
+    box-shadow: 0 20px 40px rgba(140, 122, 107, 0.2), 0 8px 15px rgba(140, 122, 107, 0.12);
+}
+
+.card h5, 
+.card h6 {
+    color: #5C4D43;
+    font-weight: 600;
+}
+
+.kpi-card {
+    position: relative;
+    overflow: hidden;
+    padding: 25px !important;
+    border: none;
+}
+
+.kpi-card .card-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.kpi-card h3 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.kpi-icon {
+    font-size: 3.5rem;
+    opacity: 0.22;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.kpi-card:hover .kpi-icon {
+    transform: scale(1.1) rotate(-10deg);
+}
+
+.chart-container {
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+
+/* Kustomisasi Color Gradient KPI */
+.bg-gradient-transaksi { 
+    background: linear-gradient(135deg, #A88264 0%, #D5BDAF 100%); 
+}
+
+.bg-gradient-pendapatan { 
+    background: linear-gradient(135deg, #A3B18A 0%, #CCD5AE 100%); 
+}
+
+.bg-gradient-pelanggan { 
+    background: linear-gradient(135deg, #E0A96D 0%, #EDC9AF 100%); 
+}
+
+.bg-gradient-produk { 
+    background: linear-gradient(135deg, #9C6644 0%, #C6AC8F 100%); 
+}
+
+h1 {
+    font-weight: 700;
+    background: linear-gradient(to right, #4E342E 0%, #8D6E63 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.border-bottom {
+    border-color: #EFE9E1 !important;
+}
+
+.sales-leaderboard-container {
+    height: 350px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.sales-leaderboard-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sales-leaderboard-container::-webkit-scrollbar-track {
+    background: #FAF6F0;
+    border-radius: 10px;
+}
+
+.sales-leaderboard-container::-webkit-scrollbar-thumb {
+    background: #E6CCB2;
+    border-radius: 10px;
+}
+
+.sales-rank-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    background-color: #FAF8F5;
+    border: 1px solid #F0ECE6;
+    border-radius: 14px;
+    transition: all 0.2s ease;
+}
+
+.sales-rank-item:hover {
+    background-color: #F5EFEB;
+    border-color: #E6CCB2;
+    transform: scale(1.01);
+}
+
+.rank-badge-container {
+    width: 32px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.rank-number-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.rank-1 { 
+    background-color: #FFF3CD; 
+    color: #D69E2E; 
+    border: 1px solid #FEEBC8; 
+}
+
+.rank-2 { 
+    background-color: #E2E8F0; 
+    color: #4A5568; 
+    border: 1px solid #CBD5E0; 
+}
+
+.rank-3 { 
+    background-color: #FFE4E6; 
+    color: #E11D48; 
+    border: 1px solid #FECDD3; 
+}
+
+.rank-default { 
+    background-color: #EFE9E1; 
+    color: #7A6F5D; 
+}
+
+.sales-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #EFEBE9;
+    color: #5D4037;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-right: 15px;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sales-avatar-1 { 
+    background-color: #FFFDF5; 
+    color: #B7791F; 
+    border-color: #FEEBC8; 
+}
+
+.sales-avatar-2 { 
+    background-color: #F7FAFC; 
+    color: #4A5568; 
+    border-color: #EDF2F7; 
+}
+
+.sales-avatar-3 { 
+    background-color: #FFF5F5; 
+    color: #C53030; 
+    border-color: #FED7D7; 
+}
+
+.sales-info-block {
+    flex-grow: 1;
+}
+
+.sales-name-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #3D312A;
+    margin-bottom: 4px;
+}
+
+.sales-progress-wrapper {
+    width: 100%;
+    background-color: #EFEBE9;
+    height: 6px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sales-progress-bar {
+    height: 100%;
+    background-color: #C6AC8F;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.sales-progress-bar-1 { 
+    background: linear-gradient(90deg, #B79477, #E0A96D); 
+}
+
+.sales-progress-bar-2 { 
+    background: linear-gradient(90deg, #A3B18A, #CCD5AE); 
+}
+
+.sales-progress-bar-3 { 
+    background: linear-gradient(90deg, #C6AC8F, #EDC9AF); 
+}
+
+.sales-revenue-display {
+    text-align: right;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #5C4D43;
+    margin-left: 15px;
+}
